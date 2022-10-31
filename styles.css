@@ -1,0 +1,66 @@
+/* TRANSFORMATIONS */
+
+
+
+
+/* BASE STYLES
+------------------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-color: lightskyblue;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    min-height: 100hvh;
+    display: grid;
+    align-items: center;
+    perspective: 100px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+/* WEIRD STUFF
+------------------------------------- */
+.stuff {
+    background: lightsalmon;
+    font-size: 9vw;
+    transform: rotateY(150deg);
+    transform-origin: center left;
+    padding:0.25em;
+    animation-name: cool;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+   
+
+}  
+
+/* ANIMATIONS
+------------------------------------- */
+
+@keyframes cool {
+
+    from{
+        transform: rotateY(150deg)
+
+    }
+
+    to{
+        transform: rotateY(0deg);
+    }
+
+
+}
+
